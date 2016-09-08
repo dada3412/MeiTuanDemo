@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MTDropdownController">
+            <connections>
+                <outlet property="mainTableView" destination="rph-wd-L1o" id="mm1-pL-a9y"/>
+                <outlet property="mainTableViewWidthConstraint" destination="cI7-Bb-Odo" id="qeC-UV-tPT"/>
+                <outlet property="subTableView" destination="1hj-AU-6EU" id="aQF-6v-d2a"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rph-wd-L1o" userLabel="mainTableView">
+                    <rect key="frame" x="0.0" y="0.0" width="150" height="600"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="cI7-Bb-Odo"/>
+                    </constraints>
+                </tableView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1hj-AU-6EU" userLabel="subTableView">
+                    <rect key="frame" x="150" y="0.0" width="450" height="600"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="1hj-AU-6EU" firstAttribute="leading" secondItem="rph-wd-L1o" secondAttribute="trailing" id="47l-Sb-llg"/>
+                <constraint firstAttribute="bottom" secondItem="1hj-AU-6EU" secondAttribute="bottom" id="C1H-Yr-4H6"/>
+                <constraint firstItem="rph-wd-L1o" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="L6X-7z-gJn"/>
+                <constraint firstAttribute="trailing" secondItem="1hj-AU-6EU" secondAttribute="trailing" id="PSD-P0-G7Y"/>
+                <constraint firstItem="rph-wd-L1o" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="fij-uS-hwa"/>
+                <constraint firstAttribute="bottom" secondItem="rph-wd-L1o" secondAttribute="bottom" id="gST-Dq-8aq"/>
+                <constraint firstItem="1hj-AU-6EU" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="k6W-V7-wzG"/>
+                <constraint firstItem="1hj-AU-6EU" firstAttribute="leading" secondItem="rph-wd-L1o" secondAttribute="trailing" id="ptT-ee-uJg"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="ptT-ee-uJg"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>
