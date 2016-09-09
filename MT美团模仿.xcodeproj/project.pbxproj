@@ -19,6 +19,7 @@
 		037FD3A51D7A036300110887 /* MTDealSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 037FD3A41D7A036300110887 /* MTDealSearchViewController.m */; };
 		037FD3AC1D7B08B500110887 /* MTHeaderCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 037FD3AA1D7B08B500110887 /* MTHeaderCollectionReusableView.m */; };
 		037FD3AD1D7B08B500110887 /* MTHeaderCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 037FD3AB1D7B08B500110887 /* MTHeaderCollectionReusableView.xib */; };
+		03D34BAD1D82417700B2DAF7 /* MTDealMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03D34BAC1D82417700B2DAF7 /* MTDealMapViewController.m */; };
 		03EAD25C1D7C50EF007E40D1 /* MTDealDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03EAD25B1D7C50EF007E40D1 /* MTDealDetailViewController.m */; };
 		03EAD2611D7CF78E007E40D1 /* MTMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03EAD2601D7CF78E007E40D1 /* MTMapViewController.m */; };
 		03EAD2631D7CFB7F007E40D1 /* MTMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03EAD2621D7CFB7F007E40D1 /* MTMapViewController.xib */; };
@@ -85,6 +86,8 @@
 		037FD3A91D7B08B500110887 /* MTHeaderCollectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTHeaderCollectionReusableView.h; sourceTree = "<group>"; };
 		037FD3AA1D7B08B500110887 /* MTHeaderCollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTHeaderCollectionReusableView.m; sourceTree = "<group>"; };
 		037FD3AB1D7B08B500110887 /* MTHeaderCollectionReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MTHeaderCollectionReusableView.xib; sourceTree = "<group>"; };
+		03D34BAB1D82417700B2DAF7 /* MTDealMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTDealMapViewController.h; sourceTree = "<group>"; };
+		03D34BAC1D82417700B2DAF7 /* MTDealMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTDealMapViewController.m; sourceTree = "<group>"; };
 		03EAD25A1D7C50EF007E40D1 /* MTDealDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTDealDetailViewController.h; sourceTree = "<group>"; };
 		03EAD25B1D7C50EF007E40D1 /* MTDealDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTDealDetailViewController.m; sourceTree = "<group>"; };
 		03EAD25F1D7CF78E007E40D1 /* MTMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTMapViewController.h; sourceTree = "<group>"; };
@@ -398,6 +401,8 @@
 				03EAD25F1D7CF78E007E40D1 /* MTMapViewController.h */,
 				03EAD2601D7CF78E007E40D1 /* MTMapViewController.m */,
 				03EAD2621D7CFB7F007E40D1 /* MTMapViewController.xib */,
+				03D34BAB1D82417700B2DAF7 /* MTDealMapViewController.h */,
+				03D34BAC1D82417700B2DAF7 /* MTDealMapViewController.m */,
 			);
 			name = Controller;
 			path = "地图模块/Controller";
@@ -750,6 +755,7 @@
 				03EAD28E1D803901007E40D1 /* MTBusiness.m in Sources */,
 				037FD3761D7803D100110887 /* MTHomeTableViewFooter.m in Sources */,
 				03EC01DF1D71A64B00BFA5D4 /* MTDropdownController.m in Sources */,
+				03D34BAD1D82417700B2DAF7 /* MTDealMapViewController.m in Sources */,
 				037FD3A51D7A036300110887 /* MTDealSearchViewController.m in Sources */,
 				03EAD2711D7D1DED007E40D1 /* AwesomeMenuItem.m in Sources */,
 				03EC01FA1D74A6E000BFA5D4 /* MTCityViewController.m in Sources */,

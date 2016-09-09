@@ -18,7 +18,7 @@
 #import "MTCategory.h"
 #import <objc/runtime.h>
 #import "MTNavigationController.h"
-#import "MTDealDetailViewController.h"
+#import "MTDealMapViewController.h"
 @interface MTMapViewController ()<MKMapViewDelegate,DPRequestDelegate>
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
 @property (weak, nonatomic) IBOutlet UIButton *locationButton;
@@ -85,7 +85,7 @@ static char *dealKey="dealKey";
         return;
     }
     
-    MTDealDetailViewController *dvc=[[MTDealDetailViewController alloc] init];
+    MTDealMapViewController *dvc=[[MTDealMapViewController alloc] init];
     [dvc setupDeals:deal];
     MTNavigationController *nvc=[[MTNavigationController alloc] initWithRootViewController:dvc];
     [self presentViewController:nvc animated:YES completion:nil];
@@ -261,5 +261,8 @@ static char *dealKey="dealKey";
     annotation.mapIcon=@"ic_category_1";
     [self.mapView addAnnotation:annotation];
 }
+
+
+
 
 @end

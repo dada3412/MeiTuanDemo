@@ -55,6 +55,28 @@ NSString *const tableViewIdentity=@"tableViewIdentity";
     [button addTarget:self action:@selector(delectSearchHistory) forControlEvents:UIControlEventTouchUpInside];
     _button=button;
     
+    [self setNavigationBarButton];
+    self.navigationController.interactivePopGestureRecognizer.delegate = (id<UIGestureRecognizerDelegate>)self;
+    
+}
+
+- (void)setNavigationBarButton
+{
+    UIButton *button=[UIButton buttonWithType:UIButtonTypeCustom];
+    [button setImage:[UIImage imageNamed:@"icon_back"] forState:UIControlStateNormal];
+    [button setImage:[UIImage imageNamed:@"icon_back_highlighted"] forState:UIControlStateHighlighted];
+    CGSize size=button.currentImage.size;
+    button.frame=CGRectMake(0, 0, size.width, size.height);
+    [button addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem * leftBarButtonItem=[[UIBarButtonItem alloc] initWithCustomView:button];
+    UIBarButtonItem * barSpacer=[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
+    barSpacer.width=-10;
+    self.navigationItem.leftBarButtonItems=@[barSpacer,leftBarButtonItem];
+}
+
+- (void)back
+{
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)delectSearchHistory
